@@ -154,7 +154,27 @@ main .main__about{
     font-size: 14px;
 }
 
+.services__cards{
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 20px;
+}
 
+.main__services h1{
+    text-align: center;
+    padding: 100px 0 30 px 0;
+}
+
+.main__services p{
+    color: #666666;
+    margin-bottom: 100px; 
+}
+
+.services__card{
+   margin-top: 20px;
+   margin-bottom: 15px;
+}
 
 
 
@@ -235,6 +255,9 @@ main .main__about{
             
             }
 
+    .services__cards{
+        grid-template-columns: auto;
+    }
 
 
 
