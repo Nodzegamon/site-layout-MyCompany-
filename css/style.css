@@ -96,7 +96,9 @@ main .main__about{
    margin: 30px 0 50px 0;
    color: #6c6c6c;
 }
-
+.about__right h:after{
+  display: none;
+}
 .about__right li{
    background: url(img/2.png) 0px no-repeat;
    padding-left: 20px;
@@ -118,7 +120,7 @@ main .main__about{
    padding-bottom: 30px;
 
 }
-
+/*
 .line{
     width: 100px;
     height: 3px;
@@ -127,6 +129,8 @@ main .main__about{
     left: 45.5%;
     margin-bottom: 105px;
 }
+*/
+
 
 .photo{
     background: #d7d7d7;
@@ -208,6 +212,108 @@ main .main__about{
     margin-bottom: 30px;
 }
 
+.main_work{
+    text-align: center;
+    padding: 100px 0 100px 0;
+}
+
+.main_work h1{
+    margin-bottom: 30px;
+}
+
+.main_work p{
+    margin-bottom: 175px;
+    color: #6c6c6c;
+}
+
+.main_work img:hover{
+    opacity: 0.9;
+}
+.contact_form{
+    padding: 100px 0 100px 0;
+}
+.contact_form h1,p{
+    text-align: center;
+}
+.contact_wrapper{
+    width:753px;
+    margin: 0 auto;
+    color: #636363;
+}
+.red{
+    color:red;
+}
+.contact_form h1{
+  color:#000;
+  margin-bottom: 30px;
+}
+form p{
+    text-align: left;
+}
+.form_inputs{
+ display: flex;
+ }
+
+input{
+    width:360px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+input:first-of-type{
+ margin-right: 23px;
+}
+textarea{
+    width: 100%;
+    height:163px;
+}
+
+input,textarea{
+    border: 1px solid #999999;
+    margin-top: 5px;
+}
+.button_block{
+    display: flex;
+    justify-content: flex-end;
+}
+input[type=sumbit]{
+    width:165px;
+    height: 40px;
+    background: #fcac45;
+    color:white;
+    margin-right: 0;
+    margin-top 20px;
+
+}
+h1:after{
+    contetnt:"";
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    padding-top: 30px;
+    border-bottom:3px solid ;
+    background: #fcac45;
+    
+}
+footer{
+    width: 100%;
+    height: auto;
+    background: #979696;
+    padding: 30px 0 30px 0;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+
+.social img{
+    margin-left:20%;
+}
+.social img:hover{
+    opacity: 0.6;
+}
+
+
 @media screen and (max-width: 1200px){
     nav{
         margin-left: 20%;
@@ -264,7 +370,7 @@ main .main__about{
     }
     .mw-100{
         max-width: 100%;
-    }
+    }ut_ri
     .main__about{
         flex-direction: column;
     }
@@ -289,8 +395,14 @@ main .main__about{
         grid-template-columns: auto;
     }
 
-
-
-
+    .line1 img:not(:first-child){
+        display: none;
+    }
+    .line2 img:not(:first-child){
+        display: none;
+    }
+    .line3 img:not(:first-child){
+        display: none;
+    }
 
 }
